@@ -54,6 +54,10 @@
 		<DefineConstants>LOCAL_CS</DefineConstants>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+	  <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+	</PropertyGroup>
+
 	<ItemGroup Condition="'$(LocalCS)' == 'true'">
 		<ProjectReference Include="..\..\cs\FFXIVClientStructs\FFXIVClientStructs.csproj" />
 		<ProjectReference Include="..\..\cs\InteropGenerator.Runtime\InteropGenerator.Runtime.csproj" />
